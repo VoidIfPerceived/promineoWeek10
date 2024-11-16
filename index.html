@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="mb-3">
+                        <label for="new-hole">Hole</label>
+                        <input type="text" class="form-control" id="new-hole" placeholder="Hole Number">
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="mb-3">
+                        <label for="date-played">Date Played</label>
+                        <input type="date" class="form-control" id="date-played">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="mb-3">
+                        <label for="new-hole-par">Hole Par</label>
+                        <input type="text" class="form-control" id="new-hole-par">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="mb-3">
+                        <label for="new-hole-strokes">Hole Strokes</label>
+                        <input type="text" class="form-control" id="new-hole-strokes">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-success form-control">Create Hole</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table table-striped">
+        <tr>
+            <th>Hole #</th>
+            <th>Date Played</th>
+            <th>Par</th>
+            <th>Strokes</th>
+            <th>Hole Score</th>
+            <th>Actions</th>
+        </tr>
+
+    </table>
+
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
